@@ -13,6 +13,10 @@ A Xamarin.Android binding of the [AltBeacon Android Beacon Library](https://gith
 *Forthcoming*
 
 
+## Xamarin Component
+*Forthcoming*
+
+
 ## Questions?  Have I Missed Something?
 
 Log a new issue, or fork this repository, and submit a pull request
