@@ -1,4 +1,4 @@
-Xamarin-Android-Beacon-Library
+Xamarin Android Beacon Library
 ==============================
 
 A Xamarin.Android binding of the [AltBeacon Android Beacon Library](https://github.com/AltBeacon/android-beacon-library). This library allows Android apps to interact with BLE beacons.
