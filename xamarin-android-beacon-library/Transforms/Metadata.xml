@@ -7,12 +7,12 @@
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
   <!-- Change the Namespace to avoid Type/Namespace name collisions -->
-  <attr path="/api/package[@name='org.altbeacon.beacon']" name="managedName">BoundAltBeacon.BoundBeacon</attr>
-  <attr path="/api/package[@name='org.altbeacon.beacon.startup']" name="managedName">BoundAltBeacon.BoundBeacon.Startup</attr>
-  <attr path="/api/package[@name='org.altbeacon.beacon.simulator']" name="managedName">BoundAltBeacon.BoundBeacon.Simulator</attr>
-  <attr path="/api/package[@name='org.altbeacon.beacon.service']" name="managedName">BoundAltBeacon.BoundBeacon.Service</attr>
-  <attr path="/api/package[@name='org.altbeacon.beacon.powersave']" name="managedName">BoundAltBeacon.BoundBeacon.Powersave</attr>
-  <attr path="/api/package[@name='org.altbeacon.beacon.client']" name="managedName">BoundAltBeacon.BoundBeacon.Client</attr>
+  <attr path="/api/package[@name='org.altbeacon.beacon']" name="managedName">AltBeaconOrg.BoundBeacon</attr>
+  <attr path="/api/package[@name='org.altbeacon.beacon.startup']" name="managedName">AltBeaconOrg.BoundBeacon.Startup</attr>
+  <attr path="/api/package[@name='org.altbeacon.beacon.simulator']" name="managedName">AltBeaconOrg.BoundBeacon.Simulator</attr>
+  <attr path="/api/package[@name='org.altbeacon.beacon.service']" name="managedName">AltBeaconOrg.BoundBeacon.Service</attr>
+  <attr path="/api/package[@name='org.altbeacon.beacon.powersave']" name="managedName">AltBeaconOrg.BoundBeacon.Powersave</attr>
+  <attr path="/api/package[@name='org.altbeacon.beacon.client']" name="managedName">AltBeaconOrg.BoundBeacon.Client</attr>
 
   <!-- Have IBeaconIntentProcessor extend mono.android.app.IntentService instead of android.app.IntentService -->
   <attr path="/api/package[@name='org.altbeacon.beacon']/class[@name='BeaconIntentProcessor' and @extends='android.app.IntentService']" name="extends">mono.android.app.IntentService</attr>
