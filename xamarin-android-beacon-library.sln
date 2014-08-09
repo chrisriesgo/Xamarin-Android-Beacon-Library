@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xamarin-android-beacon-library", "xamarin-android-beacon-library\xamarin-android-beacon-library.csproj", "{1505E6B4-F481-4808-AEB1-74C4EC926627}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinAndroidBeaconLibrary", "xamarin-android-beacon-library\XamarinAndroidBeaconLibrary.csproj", "{1505E6B4-F481-4808-AEB1-74C4EC926627}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +15,6 @@ Global
 		{1505E6B4-F481-4808-AEB1-74C4EC926627}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = xamarin-android-beacon-library\xamarin-android-beacon-library.csproj
+		StartupItem = xamarin-android-beacon-library\XamarinAndroidBeaconLibrary.csproj
 	EndGlobalSection
 EndGlobal
