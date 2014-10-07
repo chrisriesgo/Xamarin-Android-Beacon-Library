@@ -17,8 +17,17 @@
   <!-- Have IBeaconIntentProcessor extend mono.android.app.IntentService instead of android.app.IntentService -->
   <attr path="/api/package[@name='org.altbeacon.beacon']/class[@name='BeaconIntentProcessor' and @extends='android.app.IntentService']" name="extends">mono.android.app.IntentService</attr>
 
-    <!-- Hide "private" Property fields -->
+  <!-- Hide "private" Property fields -->
   <remove-node path="/api/package[@name='org.altbeacon.beacon']/class[@name='BeaconManager']/field[@name='beaconSimulator']" />
   <remove-node path="/api/package[@name='org.altbeacon.beacon']/class[@name='BeaconManager']/field[@name='dataRequestNotifier']" />
+  <remove-node path="/api/package[@name='org.altbeacon.beacon']/class[@name='BeaconManager']/field[@name='distanceModelUpdateUrl']" />
   <remove-node path="/api/package[@name='org.altbeacon.beacon.simulator']/class[@name='StaticBeaconSimulator']/field[@name='beacons']" />
+
+  <!---Rename method that doesn't override the abstract. Create new partial class that does. -->
+  <attr path="/api/package[@name='org.altbeacon.beacon.distance']/class[@name='ModelSpecificDistanceUpdater']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.Void...']]" name="managedName">_DoInBackground</attr>
+
+  <!-- IBeaconConsumer -->
+  <attr path="/api/package[@name='org.altbeacon.beacon']/interface[@name='BeaconConsumer']/method[@name='bindService' and count(parameter)=3 and parameter[1][@type='android.content.Intent'] and parameter[2][@type='android.content.ServiceConnection'] and parameter[3][@type='int']]/parameter[@name='p0']" name="name">intent</attr>
+  <attr path="/api/package[@name='org.altbeacon.beacon']/interface[@name='BeaconConsumer']/method[@name='bindService' and count(parameter)=3 and parameter[1][@type='android.content.Intent'] and parameter[2][@type='android.content.ServiceConnection'] and parameter[3][@type='int']]/parameter[@name='p1']" name="name">serviceConnection</attr>
+  <attr path="/api/package[@name='org.altbeacon.beacon']/interface[@name='BeaconConsumer']/method[@name='bindService' and count(parameter)=3 and parameter[1][@type='android.content.Intent'] and parameter[2][@type='android.content.ServiceConnection'] and parameter[3][@type='int']]/parameter[@name='p2']" name="name">flags</attr>
 </metadata>
